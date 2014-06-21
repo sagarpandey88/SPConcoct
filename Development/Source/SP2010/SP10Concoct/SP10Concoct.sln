@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP10Concoct", "SP10Concoct.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.Common", "..\SPConcoct.Common\SPConcoct.Common.csproj", "{2A0C92AE-EF37-4329-8D54-A35F0423AD28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.SAPConnect", "SPConcoct.SAPConnect\SPConcoct.SAPConnect.csproj", "{6CE3E2B9-17A3-40AD-8C5F-59BFE0E2EF4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.SAPConnect", "..\SPConcoct.SAPConnect\SPConcoct.SAPConnect.csproj", "{6CE3E2B9-17A3-40AD-8C5F-59BFE0E2EF4E}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
