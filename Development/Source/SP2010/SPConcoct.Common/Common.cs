@@ -33,6 +33,14 @@ namespace SPConcoct.Common
             {
                 seperatedValue = commaSeperatedValues.Split(',').ToList();
             }
+            else
+            {
+                //if the string is not null and doesnot contain comma
+                if (!string.IsNullOrEmpty(commaSeperatedValues))
+                {
+                    seperatedValue.Add(commaSeperatedValues);
+                }
+            }
 
             return seperatedValue;
 
@@ -40,6 +48,5 @@ namespace SPConcoct.Common
 
 
 
-       
     }
 }
