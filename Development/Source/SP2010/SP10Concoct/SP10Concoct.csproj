@@ -71,8 +71,10 @@
     <Folder Include="Features\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Layouts\SP10Concoct\Scripts\CustomChartMethod.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\NumericTextbox.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\PandaTabs.js" />
+    <Content Include="Layouts\SP10Concoct\Scripts\ScrollableGrid.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\txtNavigation.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

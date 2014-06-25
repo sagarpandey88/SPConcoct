@@ -48,6 +48,7 @@
     <Compile Include="Common.cs" />
     <Compile Include="DropdownDTO.cs" />
     <Compile Include="Encryption.cs" />
+    <Compile Include="JsonHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SPCommon.cs" />
   </ItemGroup>
