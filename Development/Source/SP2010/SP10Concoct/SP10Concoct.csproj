@@ -66,16 +66,28 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="PowershellScripts\BulkDownloadFiles.ps1" />
+    <None Include="PowershellScripts\BulkUploadFiles.ps1" />
+    <None Include="PowershellScripts\Clean-All-Items-Process-Batch.ps1" />
+    <None Include="PowershellScripts\Clean-All-Recycle-Bin-Items.ps1" />
+    <None Include="PowershellScripts\CopyListPowershell.ps1" />
+    <None Include="PowershellScripts\CreateList.ps1" />
+    <None Include="PowershellScripts\DeleteAListinSharePoint.ps1" />
+    <None Include="PowershellScripts\DeleteAlltheItemsInaList.ps1" />
+    <None Include="PowershellScripts\DeploySolutions\Run.PS1" />
+    <None Include="PowershellScripts\ExtractWSPfromFarm.ps1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Layouts\SP10Concoct\Scripts\CommonSPScripts.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\CustomChartMethod.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\NumericTextbox.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\PandaTabs.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\ScrollableGrid.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\txtNavigation.js" />
+    <Content Include="PowershellScripts\DeploySolutions\solutions.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
