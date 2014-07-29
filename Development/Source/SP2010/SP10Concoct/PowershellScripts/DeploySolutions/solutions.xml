@@ -1,0 +1,7 @@
+<Solutions>    
+        <Solution Path="WSPNAME.wsp" CASPolicies="false" GACDeployment="true">        
+      <WebApplications>            
+        <WebApplication>http://SPURL:2013</WebApplication>        
+      </WebApplications>    
+    </Solution>
+</Solutions>
