@@ -7,7 +7,11 @@ namespace SPConcoct.Common
 {
     public class Common
     {
-
+        /// <summary>
+        /// Removes the FBA string from the login name
+        /// </summary>
+        /// <param name="loginName"></param>
+        /// <returns></returns>
         private static string RemoveFBAStringLoginName(string loginName)
         {
             string FBAKey = System.Configuration.ConfigurationManager.AppSettings["MembershipProvider"];
@@ -20,7 +24,11 @@ namespace SPConcoct.Common
             return loginName;
         }
 
-
+        /// <summary>
+        /// Seperates the comma seperated value and returns it as a list of string
+        /// </summary>
+        /// <param name="commaSeperatedValues">comma seperated string</param>
+        /// <returns>List of seperated string</returns>
         public static List<string> GetCommaSeperatedItems(string commaSeperatedValues)
         {
             List<string> seperatedValue = new List<string>();
@@ -46,6 +54,23 @@ namespace SPConcoct.Common
 
         }
 
+
+        /// <summary>
+        /// Gets the Start day of the week as date time object
+        /// </summary>
+        /// <param name="dt">date of which the start day of the week has to be determined</param>
+        /// <param name="startOfWeek">Value of the start day of the week. ex Sunday or Monday ...</param>
+        /// <returns></returns>
+        public static DateTime StartOfWeek(DateTime dt, DayOfWeek startOfWeek)
+        {
+            int diff = dt.DayOfWeek - startOfWeek;
+            if (diff < 0)
+            {
+                diff += 7;
+            }
+
+            return dt.AddDays(-1 * diff).Date;
+        }
 
 
     }
