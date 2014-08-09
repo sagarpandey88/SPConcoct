@@ -5,7 +5,7 @@ using System.Web;
 using System.Text;
 using Microsoft.SharePoint.Utilities;
 
-namespace SPConcoct.Common
+namespace SPConcoct.SPCommon
 {
     /// <summary>
     /// This Class is hepler class to build dynamic caml query
