@@ -3,21 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP10Concoct", "SP10Concoct.csproj", "{19DF710F-9DE6-4BBF-B3CB-52BEA606E321}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP10Concoct", "SP10Concoct\SP10Concoct.csproj", "{19DF710F-9DE6-4BBF-B3CB-52BEA606E321}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.Common", "..\SPConcoct.Common\SPConcoct.Common.csproj", "{2A0C92AE-EF37-4329-8D54-A35F0423AD28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.Common", "SPConcoct.Common\SPConcoct.Common.csproj", "{2A0C92AE-EF37-4329-8D54-A35F0423AD28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.SAPConnect", "..\SPConcoct.SAPConnect\SPConcoct.SAPConnect.csproj", "{6CE3E2B9-17A3-40AD-8C5F-59BFE0E2EF4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.SAPConnect", "SPConcoct.SAPConnect\SPConcoct.SAPConnect.csproj", "{6CE3E2B9-17A3-40AD-8C5F-59BFE0E2EF4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.Branding", "..\SPConcoct.Branding\SPConcoct.Branding.csproj", "{E8D79E02-3A63-47FF-AF21-C608D2B9F0CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.Branding", "SPConcoct.Branding\SPConcoct.Branding.csproj", "{E8D79E02-3A63-47FF-AF21-C608D2B9F0CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPConcoct.SPCommon", "SPConcoct.SPCommon\SPConcoct.SPCommon.csproj", "{B8ABD71D-A576-4773-8BBC-FC1041EE0B8C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{E43275BA-E630-4287-9DBD-3CB658E838DB}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\SP10ListScriptGenerator\Development\Source\SAPColumnConstGenerator\SolutionItems\sapnco.dll = ..\..\..\..\..\SP10ListScriptGenerator\Development\Source\SAPColumnConstGenerator\SolutionItems\sapnco.dll
-		..\..\..\..\..\SP10ListScriptGenerator\Development\Source\SAPColumnConstGenerator\SolutionItems\sapnco_utils.dll = ..\..\..\..\..\SP10ListScriptGenerator\Development\Source\SAPColumnConstGenerator\SolutionItems\sapnco_utils.dll
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
@@ -25,20 +19,20 @@ Global
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs32
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = SP10Concoct.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\SPConcoct.Common\\SPConcoct.Common.csproj
-		SccProjectName2 = ../SPConcoct.Common
-		SccLocalPath2 = ..\\SPConcoct.Common
-		SccProjectUniqueName3 = ..\\SPConcoct.SAPConnect\\SPConcoct.SAPConnect.csproj
-		SccProjectName3 = ../SPConcoct.SAPConnect
-		SccLocalPath3 = ..\\SPConcoct.SAPConnect
-		SccProjectUniqueName4 = ..\\SPConcoct.Branding\\SPConcoct.Branding.csproj
-		SccProjectName4 = ../SPConcoct.Branding
-		SccLocalPath4 = ..\\SPConcoct.Branding
-		SccProjectUniqueName5 = SPConcoct.SPCommon\\SPConcoct.SPCommon.csproj
-		SccProjectName5 = SPConcoct.SPCommon
-		SccLocalPath5 = SPConcoct.SPCommon
+		SccProjectUniqueName1 = SPConcoct.SPCommon\\SPConcoct.SPCommon.csproj
+		SccProjectName1 = SPConcoct.SPCommon
+		SccLocalPath1 = SPConcoct.SPCommon
+		SccProjectUniqueName2 = SP10Concoct.csproj
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = SPConcoct.Common\\SPConcoct.Common.csproj
+		SccProjectName3 = SPConcoct.Common
+		SccLocalPath3 = SPConcoct.Common
+		SccProjectUniqueName4 = SPConcoct.SAPConnect\\SPConcoct.SAPConnect.csproj
+		SccProjectName4 = SPConcoct.SAPConnect
+		SccLocalPath4 = SPConcoct.SAPConnect
+		SccProjectUniqueName5 = SPConcoct.Branding\\SPConcoct.Branding.csproj
+		SccProjectName5 = SPConcoct.Branding
+		SccLocalPath5 = SPConcoct.Branding
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

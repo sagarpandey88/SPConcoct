@@ -37,11 +37,11 @@
   <ItemGroup>
     <Reference Include="sapnco, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\sapnco.dll</HintPath>
+      <HintPath>..\SolutionItems\sapnco.dll</HintPath>
     </Reference>
     <Reference Include="sapnco_utils, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\sapnco_utils.dll</HintPath>
+      <HintPath>..\SolutionItems\sapnco_utils.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

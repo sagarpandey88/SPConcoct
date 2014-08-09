@@ -49,7 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SPConcoct.Common\SPConcoct.Common.csproj">
+    <ProjectReference Include="..\SPConcoct.Common\SPConcoct.Common.csproj">
       <Project>{2a0c92ae-ef37-4329-8d54-a35f0423ad28}</Project>
       <Name>SPConcoct.Common</Name>
     </ProjectReference>
