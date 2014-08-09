@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2A0C92AE-EF37-4329-8D54-A35F0423AD28}</ProjectGuid>
+    <ProjectGuid>{B8ABD71D-A576-4773-8BBC-FC1041EE0B8C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SPConcoct.Common</RootNamespace>
-    <AssemblyName>SPConcoct.Common</AssemblyName>
+    <RootNamespace>SPConcoct.SPCommon</RootNamespace>
+    <AssemblyName>SPConcoct.SPCommon</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -43,11 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common.cs" />
-    <Compile Include="DTO\DropdownDTO.cs" />
-    <Compile Include="Encryption.cs" />
-    <Compile Include="JsonHelper.cs" />
+    <Compile Include="CamlHelper.cs" />
+    <Compile Include="SPCommon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SPConcoct.Common\SPConcoct.Common.csproj">
+      <Project>{2a0c92ae-ef37-4329-8d54-a35f0423ad28}</Project>
+      <Name>SPConcoct.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

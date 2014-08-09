@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Microsoft.SharePoint;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
-using Microsoft.SharePoint;
+using SPConcoct.Common;
 
-namespace SPConcoct.Common
+namespace SPConcoct.SPCommon
 {
+
     public class SPCommon
     {
 
@@ -309,6 +311,39 @@ namespace SPConcoct.Common
         #endregion
 
 
+
+        #region Commented Functions
+
+        //public static void PopulateDropdownWithChoice(SPList objListTimeSpent, DropDownList ddl, string columnName)
+        //{
+
+        //    try
+        //    {
+        //        SPFieldChoice fieldActivityStage = (SPFieldChoice)objListTimeSpent.Fields.GetFieldByInternalName(columnName);
+        //        int choiceIndex = 0;
+        //        List<ChoiceValueDTO> lstChoiceValues = new List<ChoiceValueDTO>();
+        //        foreach (string chVal in fieldActivityStage.Choices)
+        //        {
+        //            lstChoiceValues.Add(new ChoiceValueDTO { ChoiceKey = chVal, ChoiceValue = choiceIndex });
+
+        //            choiceIndex++;
+        //        }
+
+        //        ddl.DataSource = lstChoiceValues;
+        //        ddl.DataTextField = "ChoiceKey";
+        //        ddl.DataValueField = "ChoiceValue";
+        //        ddl.DataBind();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+
+        //    }
+
+        //}
+
+        #endregion
 
 
     }
