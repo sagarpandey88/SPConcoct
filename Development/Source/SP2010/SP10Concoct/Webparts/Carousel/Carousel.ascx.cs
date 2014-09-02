@@ -25,5 +25,25 @@ namespace SP10Concoct.Webparts.Carousel
         protected void Page_Load(object sender, EventArgs e)
         {
         }
+
+
+        #region Properties
+
+        private string _siteUrl;
+        [WebBrowsable(true), Personalizable(PersonalizationScope.Shared)]
+        public string SiteUrl
+        {
+            get
+            {
+                return _siteUrl;
+            }
+            set
+            {
+                _siteUrl = value;
+            }
+        }
+
+
+        #endregion
     }
 }

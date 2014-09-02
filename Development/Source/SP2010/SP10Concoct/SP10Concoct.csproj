@@ -44,6 +44,7 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -62,6 +63,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Carousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CustomContentEditor\CustomContentEditor.cs" />
+    <Compile Include="Webparts\CustomContentEditor\CustomContentEditorUserControl.ascx.cs">
+      <DependentUpon>CustomContentEditorUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webparts\CustomContentEditor\CustomContentEditorUserControl.ascx.designer.cs">
+      <DependentUpon>CustomContentEditorUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CustomContentQuery\CustomContentQuery.cs" />
+    <Compile Include="Webparts\CustomContentQuery\CustomToolPart.cs" />
+    <Compile Include="Webparts\ImageSlider\ImageSlider.cs" />
+    <Compile Include="Webparts\ImageSlider\ImageSliderUserControl.ascx.cs">
+      <DependentUpon>ImageSliderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webparts\ImageSlider\ImageSliderUserControl.ascx.designer.cs">
+      <DependentUpon>ImageSliderUserControl.ascx.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +111,18 @@
     <None Include="Webparts\Carousel\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{61884e63-dec7-4070-8c85-5d52a092c26f}</SharePointProjectItemId>
     </None>
+    <None Include="Webparts\CustomContentEditor\CustomContentEditor.webpart" />
+    <None Include="Webparts\CustomContentEditor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c3f96b8-dbb6-4c71-a1ef-db4b7857f0e8}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\CustomContentQuery\CustomContentQuery.webpart" />
+    <None Include="Webparts\CustomContentQuery\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{622d8bce-cf37-4346-aeb7-ed7f8b66ca61}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ImageSlider\ImageSlider.webpart" />
+    <None Include="Webparts\ImageSlider\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{21d792f0-a158-447d-a86a-156f20a0b74b}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -110,6 +141,11 @@
       <LastGenOutput>Carousel.ascx.g.cs</LastGenOutput>
     </Content>
     <Content Include="Webparts\Carousel\Elements.xml" />
+    <Content Include="Webparts\CustomContentEditor\CustomContentEditorUserControl.ascx" />
+    <Content Include="Webparts\CustomContentEditor\Elements.xml" />
+    <Content Include="Webparts\CustomContentQuery\Elements.xml" />
+    <Content Include="Webparts\ImageSlider\Elements.xml" />
+    <Content Include="Webparts\ImageSlider\ImageSliderUserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
