@@ -48,14 +48,26 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webparts\Carousel\Carousel.ascx.cs">
+      <DependentUpon>Carousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Carousel\Carousel.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Carousel.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\Webparts\Webparts.feature">
+      <FeatureId>{58c6a6db-d4f9-467c-a1ee-1733d3d1543f}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6197972e-5419-4e4a-aca9-1cda085584cf}</SharePointProjectItemId>
@@ -76,11 +88,16 @@
     <None Include="PowershellScripts\DeleteAlltheItemsInaList.ps1" />
     <None Include="PowershellScripts\DeploySolutions\Run.PS1" />
     <None Include="PowershellScripts\ExtractWSPfromFarm.ps1" />
+    <None Include="Webparts\Carousel\Carousel.webpart" />
+    <None Include="Webparts\Carousel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{61884e63-dec7-4070-8c85-5d52a092c26f}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Features\Webparts\Webparts.Template.xml">
+      <DependentUpon>Webparts.feature</DependentUpon>
+    </Content>
     <Content Include="Layouts\SP10Concoct\Scripts\CommonSPScripts.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\CustomChartMethod.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\NumericTextbox.js" />
@@ -88,6 +105,11 @@
     <Content Include="Layouts\SP10Concoct\Scripts\ScrollableGrid.js" />
     <Content Include="Layouts\SP10Concoct\Scripts\txtNavigation.js" />
     <Content Include="PowershellScripts\DeploySolutions\solutions.xml" />
+    <Content Include="Webparts\Carousel\Carousel.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Carousel.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Carousel\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

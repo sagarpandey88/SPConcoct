@@ -2,5 +2,6 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4745e1e1-4cbf-465a-a218-9b026e1d6076" solutionId="4745e1e1-4cbf-465a-a218-9b026e1d6076" resetWebServer="false" name="SPConcoct.Branding" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
     <featureReference itemId="40e77fbb-b9ab-4a45-b747-de2ac724afa2" />
+    <featureReference itemId="ba73dcc2-ff62-43f2-93c2-8b48909f9e86" />
   </features>
 </package>
