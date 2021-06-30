@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ImageSlider" List="113" Url="_catalogs/wp">
+    <File Path="ImageSlider\ImageSlider.webpart" Url="ImageSlider.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="SPConcoct Custom Webparts" />
+    </File>
+  </Module>
+</Elements>
